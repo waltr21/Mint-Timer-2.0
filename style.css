@@ -1,0 +1,63 @@
+.list-view .list-cell:hover {
+    -fx-background-color: #33333D;
+    /* -fx-border-color: #96ffcc; */
+}
+
+.list-view .list-cell:selected {
+    /* -fx-border-color: #96ffcc; */
+
+}
+
+.list-view .list-cell {
+    -fx-background-color: #4e4e5b;
+    -fx-text-fill: white;
+    -fx-padding: 1;
+    -fx-alignment: center;
+    -fx-cell-size: 35px;
+}
+
+.list-view .label {
+    -fx-text-fill: white;
+    -fx-font-size: 1.3em;
+    /* -fx-background-color: black; */
+}
+
+.jfx-rippler {
+    -jfx-rippler-fill: #96ffcc;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.list-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive(black,90%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+    -fx-pref-width: 8.5;
+    -fx-padding: 2;
+    -fx-opacity: 0;
+}
+
+.list-view .scroll-bar:vertical {
+    -fx-pref-width: 0;
+    -fx-padding: 0;
+    -fx-background-color:transparent;
+    -fx-opacity: 0;
+
+}
+
+list-view .scroll-bar:horizontal .thumb {
+    -fx-opacity: 0;
+    -fx-background-color:transparent;
+
+
+}
+
+.list-view .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-background-color:transparent;
+
+}
+
+.jfx-popup-container
+{
+    -fx-background-color: black;
+}

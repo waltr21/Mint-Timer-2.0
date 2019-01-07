@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handlePressed" onKeyReleased="#handleRelease" prefHeight="650.0" prefWidth="650.0" style="-fx-background-color: #33333D;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <children>
+      <Label fx:id="timeLabel" alignment="CENTER" layoutX="85.0" layoutY="267.0" prefHeight="116.0" prefWidth="497.0" text="0.0" textAlignment="CENTER" textFill="#96ffcb" AnchorPane.bottomAnchor="267.0" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="68.0" AnchorPane.topAnchor="267.0">
+         <font>
+            <Font name="Arial" size="90.0" />
+         </font>
+      </Label>
+      <Label fx:id="scrambleLabel" alignment="BOTTOM_CENTER" layoutX="63.0" layoutY="490.0" prefHeight="133.0" prefWidth="524.0" text="Scrambles" textAlignment="CENTER" textFill="#96ffcc" wrapText="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="76.5" AnchorPane.rightAnchor="76.5">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <JFXListView fx:id="listView" editable="true" focusTraversable="false" layoutX="16.0" layoutY="80.0" onMouseClicked="#listClicked" onMouseExited="#listExited" onMouseMoved="#mouseHovered" prefHeight="307.0" prefWidth="125.0" style="-fx-background-color: #33333D; -fx-border-width: 1.5; -fx-border-radius: 4; -fx-padding: 0;" stylesheets="@style.css" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="80.0" />
+      <JFXToggleButton fx:id="secondsToggle" layoutX="480.0" layoutY="22.0" onAction="#toggleClicked" prefHeight="60.0" prefWidth="59.0" text=" " textFill="#96ffcc" toggleLineColor="#96ffcc" visible="false" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXToggleButton>
+      <Label fx:id="secondsLabel" layoutX="428.0" layoutY="29.0" text="Seconds" textFill="#e1e1e1" visible="false" AnchorPane.rightAnchor="88.5" AnchorPane.topAnchor="29.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="avgLabel" layoutX="16.0" layoutY="37.0" prefHeight="26.0" prefWidth="220.0" text="AVG: -" textFill="#e1e1e1" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="bestLabel" alignment="BOTTOM_LEFT" layoutX="20.0" layoutY="49.0" prefHeight="26.0" prefWidth="220.0" text="Best: -" textAlignment="CENTER" textFill="#e1e1e1" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="45.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXToggleButton fx:id="emojiToggle" layoutX="561.0" layoutY="71.0" onAction="#emojiToggleClicked" prefHeight="60.0" prefWidth="59.0" text=" " textFill="#96ffcc" toggleLineColor="#96ffcc" visible="false" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="71.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXToggleButton>
+      <Label fx:id="emojiLabel" layoutX="501.0" layoutY="90.0" text="Emojis" textFill="#e1e1e1" visible="false" AnchorPane.rightAnchor="88.5" AnchorPane.topAnchor="90.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="toolLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="587.0" opacity="0.8" style="-fx-background-color: black; -fx-border-radius: 20; -fx-background-radius: 10; -fx-padding: 10;" text="label" textAlignment="CENTER" textFill="#ebebeb" textOverrun="CLIP" visible="false" wrapText="true" />
+      <JFXButton fx:id="settingsButton" buttonType="RAISED" layoutX="566.0" layoutY="16.0" onAction="#settingsClicked" style="-fx-background-color: #96ffcb#96ffcb;" text="Settings" textFill="#33333d" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+   </children>
+</AnchorPane>
